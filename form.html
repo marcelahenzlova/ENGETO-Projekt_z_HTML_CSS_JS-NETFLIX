@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registrace</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION -->
+      <nav class="navigation">
+        <img class="logo" src="images/netflix-logo.png" alt="logo" />
+        <a href="index.html" class="button">Úvodní strana</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- FORM -->
+      <section class="section1" id="registerForm">
+        <form class="form-container">
+          <input
+            class="input"
+            type="text"
+            placeholder="Křestní jméno"
+            autocomplete="given-name"
+            required
+          />
+          <input
+            class="input"
+            type="text"
+            placeholder="Příjmení"
+            autocomplete="family-name"
+            required
+          />
+          <input
+            class="input"
+            type="email"
+            placeholder="Přihlašovací email"
+            autocomplete="email"
+            required
+          />
+          <input
+            class="input"
+            id="password"
+            type="password"
+            placeholder="Vaše heslo"
+            required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+          />
+          <div id="passwordError" class="error-message"></div>
+          <input
+            class="input"
+            id="passwordConfirm"
+            type="password"
+            placeholder="Heslo znovu"
+            required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+          />
+          <div id="passwordConfirmError" class="error-message"></div>
+          <button class="button" type="submit">Odeslat</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="dist/form.js" defer></script>
+  </body>
+</html>

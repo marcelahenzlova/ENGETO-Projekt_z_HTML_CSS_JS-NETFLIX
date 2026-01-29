@@ -1,0 +1,28 @@
+{
+  "name": "projekt-netflix",
+  "version": "1.0.0",
+  "description": "Projekt s 'NETFLIX' vytvořený pomocí HTML, CSS a TypeScript",
+  "homepage": "https://github.com/marcelahenzlova/ENGETO-Projekt_z_HTML_CSS_JS-NETFLIX#readme",
+  "bugs": {
+    "url": "https://github.com/marcelahenzlova/ENGETO-Projekt_z_HTML_CSS_JS-NETFLIX/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelahenzlova/ENGETO-Projekt_z_HTML_CSS_JS-NETFLIX.git"
+  },
+  "license": "ISC",
+  "author": "MH",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "verze": "which tsc",
+    "build": "tsc",
+    "dev": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "liveserver": "^0.1.20",
+    "typescript": "^5.9.3"
+  }
+}

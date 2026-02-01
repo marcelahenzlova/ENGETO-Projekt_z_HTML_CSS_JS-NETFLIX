@@ -1,0 +1,18 @@
+{
+  "name": "netflix",
+  "version": "1.0.0",
+  "description": "Projekt s 'NETFLIX' vytvořený pomocí HTML, CSS a JS dle přiloženého souboru 'Zadání.pdf'.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "typescript": "^5.9.3"
+  }
+}

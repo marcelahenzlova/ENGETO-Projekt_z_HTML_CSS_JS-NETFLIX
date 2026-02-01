@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Najít další filmy</title>
+  </head>
+  <body>
+    <main>
+      <!-- FILTER -->
+      <section class="select-container">
+        <a href="index.html" class="button">Úvodní strana</a>
+
+        <select
+          class="select"
+          aria-label="Vyberte žánr filmu"
+          title="Vyberte žánr filmu"
+        >
+          <option class="option default" value="default">
+            Vyberte možnost
+          </option>
+          <option class="option" value="girl">Girl</option>
+          <option class="option" value="boy">Boy</option>
+          <option class="option" value="avengers">Avengers</option>
+          <option class="option" value="horror">Horror</option>
+        </select>
+      </section>
+
+      <section class="gallery"></section>
+    </main>
+
+    <script type="module" src="dist/filter.js" defer></script>
+  </body>
+</html>
